@@ -1,11 +1,26 @@
 import { useState } from 'react'
-// import './App.css'
 
 function App() {
+  //Jsx kodlari ucun 
+  // javascript kodlari ucun
+ let a=[
+  '1',
+  '2',
+  '3',
+ ]
   return (
+    //html kodlari icin
     <>
       <div>
-      <h1>Hello world</h1>
+        {
+      a.map((num,index)=>
+      <div style={{
+backgroundColor:'red',
+border:'1px soldi blue'
+      }} key={index}>
+        {num}
+      </div>)
+      }
       </div>
      
     </>
